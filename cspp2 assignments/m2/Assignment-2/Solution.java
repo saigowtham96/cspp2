@@ -1,21 +1,25 @@
 import java.util.Scanner;
-/**
+/**.
  * public class
  */
 public final class Solution {
-    private Solution() { /**.
-        *This is a constructor*/
+    /**.
+     *constructor
+    */
+    private Solution() { 
     }
     /**.
-    @param args of the type string
-    */
+     * { main function }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
         equation(a, b, c);
-    } 
+    }
     /**.
        @param b = numeric element of the equation
        @param c = numeric element of the equation
