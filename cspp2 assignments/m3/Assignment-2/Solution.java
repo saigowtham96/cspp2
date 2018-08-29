@@ -13,7 +13,11 @@ public final class Solution {
 	}
 /* Fill the main function to print the number of 7's between 1 to n*/
 	public static void main(final String[] args) {
-		Scanner s = new Scanner(System.in);   
+		/**
+		 * @param  a = numeric
+		 * @param  b = numeric
+		 */
+		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 		int count = 0;
 		final int a = 10;
@@ -24,7 +28,7 @@ public final class Solution {
 				if (j % a == b) {
 					count = count + 1;
 				}
-			 j = j / a;	
+			 j = j / a;
 			}
 		}
 		System.out.println(count);
