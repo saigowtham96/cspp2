@@ -40,7 +40,11 @@ public final class Solution {
     }
     /*Need to write the gcd function and print the output.*/
 }
-  
+
+
+
+
+
 
 
 
