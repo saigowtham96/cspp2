@@ -24,7 +24,7 @@ public final class Solution {
 				if (j % a == b) {
 					count = count + 1;
 				}
-			 j = j / 10;	
+			 j = j / a;	
 			}
 		}
 		System.out.println(count);
