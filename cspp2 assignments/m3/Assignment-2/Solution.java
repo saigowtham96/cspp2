@@ -9,10 +9,10 @@ public class Solution {
 		Scanner s = new Scanner(System.in);    
 		int n = s.nextInt();
 		int count = 0;
-		for(int i = 0; i <= n; i++) {
+		for (int i = 0; i <= n; i++) {
 			int j = i;
-			while(j >= 1) {
-				if(j % 10 == 7) {
+			while (j >= 1) {
+				if (j % 10 == 7) {
 					count = count + 1;
 				}
 			 j = j / 10;	
