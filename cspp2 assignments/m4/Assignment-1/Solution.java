@@ -1,15 +1,15 @@
 import java.util.Scanner;
 public final class Solution {
-    /**
-     * constructor
-     */
+/**
+* constructor
+*/
     private Solution() {
     }
 /**
  * { function_description }
  *
  * @param      args  The arguments
- */
+*/
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
