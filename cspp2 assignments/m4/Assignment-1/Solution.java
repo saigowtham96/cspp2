@@ -1,10 +1,9 @@
-
 import java.util.Scanner;
 public final class Solution {
     /**
      * constructor
      */
-    private Solution() {  
+    private Solution() {
     }
 /**
  * { function_description }
