@@ -6,9 +6,6 @@ public final class Solution {
  * { function_description }
  *
  * @param      n  array size
- * @param      a[] initilizing array
- * @param      a[i] array elements
- * @param      max  max variable
  */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
