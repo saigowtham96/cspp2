@@ -1,57 +1,60 @@
-import java.util.*;
-/**.
- * Class for solution.
- */
-public class Solution {
-	/* Fill the main function to print resultant of addition of matrices*/
-	/**.
-	 * Constructs the object.
-	 */
-	private Solution() {
-	}
-	/**.
-	 * Constructs the object.
-	 *
-	 * @param      a     { parameter_description }
-	 */
-	public int[][] readinput(int row, int col) {
-		int[][] d = new int[row][col];
-		Scanner sc = new Scanner(System.in);
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				d[i][j] = sc.nextInt();
-			}
-		}
-		return d;
-	}
-	/**.
-	 * { function_description }
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Solution s = new Solution();
-		Scanner sc = new Scanner(System.in);
-		int row1, col1, row2, col2;
-		row1 = sc.nextInt();
-		col1 = sc.nextInt();
-		int[][] a = new int[row1][col1];
-		a = s.readinput(row1, col1);
-		row2 = sc.nextInt();
-		col2 = sc.nextInt();
-		int[][] b = new int[row2][col2];
-		b = s.readinput(row2, col2);
-		if ( row1 == row2 && row2 == col2 ) {
-			for (int i = 0; i < row1; i++) {
-				for (int j = 0; j < col1; j++) {
-					int sum = a[i][j] + b[i][j];
-					System.out.print(sum + " ");;
-				}
-				System.out.print("\n");
-			}
-		}
-		else
-			System.out.println("not possible");
-		
-	}
+/**
+*scanner class.
+*/
+import java.util.Scanner;
+/**
+*solution class.
+*/
+public final class Solution {
+    /**
+    *Fill the main function to print resultant of addition of matrices
+    */
+    /**
+    *constructor.
+    */
+    private Solution() {
+        /**
+        *this is a constructor.
+        */
+    }
+    /** this is main method.
+    *@param args String
+    */
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        int y = s.nextInt();
+        int[][] a = new int[x][y];
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                a[i][j] = s.nextInt();
+            }
+        }
+
+        int p = s.nextInt();
+        int q = s.nextInt();
+        int[][] b = new int[p][q];
+        for (int i = 0; i < p; i++) {
+            for (int j = 0; j < q; j++) {
+                b[i][j] = s.nextInt();
+            }
+        }
+        if (x == p && y == q) {
+            int[][] c = new int[x][y];
+            for (int i = 0; i < x; i++) {
+                for (int j = 0; j < y; j++) {
+                    c[i][j] = a[i][j] + b[i][j];
+                }
+            }
+            for (int i = 0; i < x; i++) {
+                for (int j = 0; j < y - 1; j++) {
+                    c[i][j] = a[i][j] + b[i][j];
+                    System.out.print(c[i][j] + " ");
+               }
+                System.out.println(c[i][y - 1]);
+            }
+        } else {
+            System.out.println("not possible");
+        }
+    }
 }
