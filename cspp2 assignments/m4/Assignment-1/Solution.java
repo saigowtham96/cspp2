@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public final class Solution {
-/**
+/**.
 * constructor
 */
     private Solution() {
     }
-/**
+/**.
  * { function_description }
  *
  * @param      args  The arguments
