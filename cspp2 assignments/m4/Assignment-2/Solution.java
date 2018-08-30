@@ -14,11 +14,11 @@ public class Solution {
 	 *
 	 * @param      a     { parameter_description }
 	 */
-	public int[][] readinput(int r, int c) {
-		int[][] d = new int[r][c];
+	public int[][] readinput(int row, int col) {
+		int[][] d = new int[row][col];
 		Scanner sc = new Scanner(System.in);
-		for (int i = 0; i < r; i++) {
-			for (int j = 0; j < c; j++) {
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
 				d[i][j] = sc.nextInt();
 			}
 		}
@@ -32,18 +32,18 @@ public class Solution {
 	public static void main(final String[] args) {
 		Solution s = new Solution();
 		Scanner sc = new Scanner(System.in);
-		int r1, c1, r2, c2;
-		r1 = sc.nextInt();
-		c1 = sc.nextInt();
-		int[][] a = new int[r1][c1];
-		a = s.readinput(r1, c1);
-		r2 = sc.nextInt();
-		c2 = sc.nextInt();
-		int[][] b = new int[r2][c2];
-		b = s.readinput(r2, c2);
-		if ( r1 == r2 && r2 == c2 ) {
-			for (int i = 0; i < r1; i++) {
-				for (int j = 0; j < c1; j++) {
+		int row1, col1, row2, col2;
+		row1 = sc.nextInt();
+		col1 = sc.nextInt();
+		int[][] a = new int[row1][col1];
+		a = s.readinput(row1, col1);
+		row2 = sc.nextInt();
+		col2 = sc.nextInt();
+		int[][] b = new int[row2][col2];
+		b = s.readinput(row2, col2);
+		if ( row1 == row2 && row2 == col2 ) {
+			for (int i = 0; i < row1; i++) {
+				for (int j = 0; j < col1; j++) {
 					int sum = a[i][j] + b[i][j];
 					System.out.print(sum + " ");;
 				}
