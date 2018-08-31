@@ -1,5 +1,5 @@
 
-//Write a java method that returns the decimal value for the given binary string.
+//Write a java method converts decimal value for the given binary string.
 
 
 import java.util.Scanner;
@@ -11,7 +11,6 @@ public final class Solution {
 * constructs the object
 */
     private Solution() {
-        
     }
 /**.
  * { function_description }
