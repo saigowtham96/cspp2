@@ -3,8 +3,8 @@
 
 
 import java.util.Scanner;
-public class Solution
-{/*
+public class Solution {
+/*
 	Do not modify the main function 
 	*/
 	public static void main(String[] args) {
@@ -15,7 +15,6 @@ public class Solution
             reverse = reverse + s.charAt(i);
         }
 		System.out.println(reverse);
-		
 	}
 	//Write reverseString function
 
