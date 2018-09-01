@@ -16,19 +16,18 @@ public final class Solution {
      * Prints the odd composite numbers between 2 and n.
      *
      * @param      n     n value
-     * @param      factor value
      */
     static void oddComposites(final int n) {
-    	int factor = 0;
+        int factor = 0;
 
-	 for (int i = 2; i < n; i++) {
-	 	if (n % i == 0) {
-	 		factor = factor + 1;
-	 	}
-	 	if (factor > 2) {
-	 		System.out.println(i);
-	 	}
-	 }
+     for (int i = 2; i < n; i++) {
+        if (n % i == 0) {
+            factor = factor + 1;
+        }
+        if (factor > 2) {
+            System.out.println(i);
+        }
+     }
     }
     /**
     * main method as driver program.
