@@ -121,7 +121,7 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-        if(index < size) {
+        if (index < size) {
             for (int i = index;i < size-1;i++) {
             arr[index] = arr[index+1];
         }
@@ -148,7 +148,7 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     public int get(int index) {
-        if(index >- 1 && index < size) {
+        if (index >- 1 && index < size) {
             return arr[index];
         }
         // Replace the code below to write the code for get
@@ -178,9 +178,9 @@ public class List {
     public String toString() {
         String x = "[";
         String y = ",";
-        for(int i = 0;i < size;i++) {
+        for (int i = 0;i < size;i++) {
             x+= Integer.toString(arr[i]);
-            if(i<size-1){
+            if (i<size-1){
                 x+=y;
             }
         }
@@ -188,7 +188,7 @@ public class List {
         x += "]";
         // Replace the code below
         return x;
-    } 
+    }
     
     /*
      * Contains return true if the list has
@@ -197,8 +197,8 @@ public class List {
      * the item exists and otherwise false
      */
     public boolean contains(int item) {
-        for(int element : arr) {
-            if(element == item){
+        for (int element : arr) {
+            if (element == item){
                 return true;
             }
         }
@@ -211,8 +211,8 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(int item) {
-        for(int i = 0;i < size;i++) {
-            if(arr[i] == item) {
+        for (int i = 0;i < size;i++) {
+            if (arr[i] == item) {
                 return i;
             }
 
