@@ -2,8 +2,7 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 public class List {
-	//Implement all the methods mentioned to build a ListADT
-
+    //Implement all the methods mentioned to build a ListADT
     /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -25,11 +24,9 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
-
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -51,9 +48,6 @@ public class List {
      */
     private int[] arr;
     int size;
-    
-
-
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -65,7 +59,6 @@ public class List {
     public List() {
         arr = new int[10];
         size = 0;
-
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
@@ -78,8 +71,7 @@ public class List {
         // That is the initial value to use for size.
 
     }
-    
-    /*
+     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
      * The assumption is to store the item at the end of the list
@@ -226,7 +218,7 @@ public class List {
         return -1;
     }
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -269,5 +261,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
