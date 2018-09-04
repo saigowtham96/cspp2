@@ -203,7 +203,6 @@ public class List {
 
             }
         }
-        // Replace the code below
         return false;
     }
 
