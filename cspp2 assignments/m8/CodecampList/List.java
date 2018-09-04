@@ -122,7 +122,8 @@ public class List {
      */
     public void remove(int index) {
         if (index < size) {
-            for (int i = index;i < size-1;i++) {
+            for (int i = index; i < size-1; 
+                i++) {
             arr[index] = arr[index+1];
         }
         size--;
