@@ -180,8 +180,8 @@ public class List {
         String y = ",";
         for (int i = 0;i < size;i++) {
             x+= Integer.toString(arr[i]);
-            if (i<size-1){
-                x+=y;
+            if (i < size - 1){
+                x+= y;
             }
         }
 
