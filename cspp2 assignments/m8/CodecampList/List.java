@@ -125,7 +125,7 @@ public class List {
             for (int i = index; i < size - 1; i++) {
             arr[i] = arr[i + 1];
         }
-        arr[size - 1] = 0;
+            arr[size - 1] = 0;
         size--;
 
      }
@@ -263,6 +263,8 @@ public class List {
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
+                break;
+                default:
                 break;
             }
         }
