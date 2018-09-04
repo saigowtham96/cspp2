@@ -46,7 +46,7 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      */
     private int[] arr;
-    int size;
+    private int size;
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
