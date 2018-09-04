@@ -144,7 +144,7 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
     public int get(int index) {
@@ -178,8 +178,8 @@ public class List {
     public String toString() {
         String x = "[";
         String y = ",";
-        for (int i = 0;i < size;i++) {
-            x+= Integer.toString(arr[i]);
+        for (int i = 0; i < size; i++) {
+            x += Integer.toString(arr[i]);
             if (i < size - 1){
                 x+= y;
             }
