@@ -142,7 +142,7 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     public int get(int index) {
-        if(index>-1 && index<size) {
+        if(index >- 1 && index < size) {
             return arr[index];
         }
         // Replace the code below to write the code for get
@@ -172,7 +172,7 @@ public class List {
     public String toString() {
         String x = "[";
         String y = ",";
-        for(int i=0;i<size;i++) {
+        for(int i = 0;i < size;i++) {
             x+= Integer.toString(arr[i]);
             if(i<size-1){
                 x+=y;
@@ -191,7 +191,7 @@ public class List {
      * the item exists and otherwise false
      */
     public boolean contains(int item) {
-        for(int i=0;i<size;i++) {
+        for(int i = 0;i < size;i++) {
             if(arr[i] == item){
                 return true;
 
