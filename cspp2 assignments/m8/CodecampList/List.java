@@ -121,7 +121,7 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-        if(index<size) {
+        if(index < size) {
             for (int i = index;i < size-1;i++) {
             arr[index] = arr[index+1];
         }
@@ -211,7 +211,7 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(int item) {
-        for(int i=0;i<size;i++) {
+        for(int i = 0;i < size;i++) {
             if(arr[i] == item) {
                 return i;
             }
@@ -258,7 +258,7 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                if(l.get(Integer.parseInt(tokens[1]))<l.size) {
+                if(l.get(Integer.parseInt(tokens[1])) < l.size) {
                 System.out.println(l.get(Integer.parseInt(tokens[1])));
             }
                 break;
