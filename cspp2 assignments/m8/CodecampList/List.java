@@ -197,10 +197,9 @@ public class List {
      * the item exists and otherwise false
      */
     public boolean contains(int item) {
-        for(int i = 0;i < size;i++) {
+        for(int i = 0;i <= size;i++) {
             if(arr[i] == item){
                 return true;
-
             }
         }
         return false;
