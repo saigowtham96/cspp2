@@ -122,9 +122,8 @@ public class List {
      */
     public void remove(int index) {
         if (index < size) {
-            for (int i = index; i < size-1; 
-                i++) {
-            arr[index] = arr[index+1];
+            for (int i = index; i < size-1; i++) {
+               arr[index] = arr[index+1];
         }
         size--;
 
@@ -199,7 +198,7 @@ public class List {
      */
     public boolean contains(int item) {
         for (int element : arr) {
-            if (element == item){
+            if (element == item) {
                 return true;
             }
         }
@@ -207,7 +206,7 @@ public class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
