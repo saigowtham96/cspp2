@@ -84,7 +84,8 @@ public class List {
      * The method returns void (nothing)
      */
     public void add(int item) {
-        arr[size++] = item;
+        arr[size] = item;
+        size += 1;
         // elements++;
         //Inserts the specified element at the end of the list.
     }
@@ -122,7 +123,7 @@ public class List {
     public void remove(int index) {
         if (index >=0 && index < size) {
             for (int i = index; i < size - 1; i++) {
-               arr[i] = arr[i + 1];
+            arr[i] = arr[i + 1];
         }
         arr[size - 1] = 0;
         size--;
