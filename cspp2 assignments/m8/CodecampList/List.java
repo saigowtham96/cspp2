@@ -149,7 +149,7 @@ public class List {
      * number of items in the list? Would size variable be useful?
      */
     public int get(int index) {
-        if (index > -1 && index < size) {
+        if (index < size) {
             return arr[index];
         }
         // Replace the code below to write the code for get
