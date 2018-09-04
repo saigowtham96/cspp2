@@ -121,10 +121,16 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-        for (int i = index;i < size-1;i++) {
+        if(index<size) {
+            for (int i = index;i < size-1;i++) {
             arr[index] = arr[index+1];
         }
         size--;
+
+        }
+        else {
+            System.out.println("Invalid position exception");
+        }
 
         // write the logic for remove here.
         // Think about what to do to the size variable.
