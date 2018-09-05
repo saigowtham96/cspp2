@@ -15,7 +15,7 @@ public final class Solution {
 /**.
  * { function_description }
  *
- * @param      args  The arguments
+ * @param    args  The arguments
  */
 /**.
  * This is main method
