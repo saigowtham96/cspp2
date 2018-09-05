@@ -138,7 +138,8 @@ public class List {
             }
             list[size - 1] = 0;
             size--;
-        }else {
+        }
+        else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -186,7 +187,7 @@ public class List {
         // Replace the code below
         String str = "[";
         String cmm = ",";
-        for (int i = 0; i < size ; i++) {
+        for (int i = 0; i < size; i++) {
             str += Integer.toString(list[i]);
             if (i < size - 1) {
                 str += cmm;
@@ -202,7 +203,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         // Replace the code below
         return indexOf(item) >= 0;
     }
@@ -212,7 +213,7 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
