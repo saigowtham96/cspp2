@@ -132,13 +132,13 @@ public class List {
     public void remove(int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
-        if(index >= 0 && index < size){
+        if (index >= 0 && index < size) {
             for (int i = index; i < size - 1; i++ ) {
                 list[i] = list[i + 1];
             }
             list[size - 1] = 0;
             size--;
-        }else{
+        }else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -154,9 +154,9 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
-        if(index > -1 && index < size){
+        if (index > -1 && index < size) {
             return list[index];
         }
         return -1;
@@ -186,9 +186,9 @@ public class List {
         // Replace the code below
         String str = "[";
         String cmm = ",";
-        for ( int i = 0; i < size ; i++ ) {
+        for (int i = 0; i < size ; i++) {
             str += Integer.toString(list[i]);
-            if(i < size - 1){
+            if (i < size - 1) {
                 str += cmm;
             }
         }
@@ -214,7 +214,7 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for (int i = 0; i < size ; i++ ) {
+        for (int i = 0; i < size; i++) {
             if(list[i] == item){
                 return i;
             }
@@ -222,7 +222,7 @@ public class List {
         return -1;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -258,9 +258,10 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                int temp=l.get(Integer.parseInt(tokens[1]));
-                if(temp != -1)
+                int temp = l.get(Integer.parseInt(tokens[1]));
+                if (temp != -1) {
                     System.out.println(temp);
+                }
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
