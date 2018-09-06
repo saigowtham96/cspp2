@@ -1,5 +1,8 @@
 //An interface for ListADT of strings
 import java.util.Arrays;
+/**.
+ * Interface for string list interface.
+ */
 interface StringListInterface
 {
 	 public void add(String item);
@@ -119,6 +122,9 @@ public class StringList implements StringListInterface{
      * 
      * The method returns void (nothing)
      */
+    /**.
+     * resize
+     */
 
     private void resize() {
        int resize = size*2;
@@ -128,6 +134,11 @@ public class StringList implements StringListInterface{
 
 
     }
+    /**.
+     * add 
+     *
+     * @param      item  The item
+     */
 
     public void add(String item) {
         //Inserts the specified element at the end of the list.
@@ -142,7 +153,11 @@ public class StringList implements StringListInterface{
     }
     /*Inserts all the elements of specified int 
     array to the end of list*/
-   
+   /**.
+    * Adds all.
+    *
+    * @param      items  The items
+    */
     public void addAll(String[] items) {
         for (int i = 0; i <items.length;i++) {
             add(items[i]); 
@@ -180,6 +195,11 @@ public class StringList implements StringListInterface{
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
+    /**.
+     * remove
+     *
+     * @param      index  The index
+     */
 
     public void remove(int index) {
         if (index >= 0 && index < size) {
@@ -208,6 +228,20 @@ public class StringList implements StringListInterface{
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
+     */
+    /**.
+     * get String
+     *
+     * @param      index  The index
+     *
+     * @return     { returns string index }
+     */
+    /**.
+     * get string
+     *
+     * @param      index  The index
+     *
+     * @return     { string }
      */
     public String get(int index) {
         if (index > -1 && index < size) {
@@ -238,6 +272,11 @@ public class StringList implements StringListInterface{
      * not all the elements of the array.
      *
      */
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String str = "[";
         String cmm = ",";
@@ -259,6 +298,13 @@ public class StringList implements StringListInterface{
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
+    /**.
+     * boolean
+     *
+     * @param      item  The item
+     *
+     * @return     { boolean}
+     */
     public boolean contains(String item) {
         return indexOf(item) == -1;
         
@@ -268,6 +314,13 @@ public class StringList implements StringListInterface{
      * Returns the index of the first occurrence 
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
+     */
+    /**.
+     * indexof
+     *
+     * @param      item  The item
+     *
+     * @return     { string }
      */
     public int indexOf(String item) {
         for (int i = 0; i < size; i++) {
