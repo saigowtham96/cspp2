@@ -285,9 +285,12 @@ public class List {
     public void add(int index,int item) {
     	for (int i = size; i > index ; i--) {
     		list[i] = list[i-1];
+    		list[index] = list[item];
+    		size++;
+
+
 
     	}
-    	list[index] = list[item];
 
          
     }
