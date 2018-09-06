@@ -114,7 +114,7 @@ public class List {
     		list[size++] = item;
     	}
         //Inserts the specified element at the end of the zelist.
-        list[size++] = item;   
+      
     }
 
     /*
