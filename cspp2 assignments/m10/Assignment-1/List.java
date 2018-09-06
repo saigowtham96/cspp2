@@ -268,7 +268,7 @@ public class List {
    /*Inserts all the elements of specified int 
     array to the end of list*/
     public void addAll(int items[]) {
-        for(int i = 0; i < items.length; i--) {
+        for(int i = 0; i < items.length; i++) {
         	add(items[i]);
 
         }
