@@ -3,13 +3,16 @@ import java.util.Scanner;
 /**.
  * Class for solution.
  */
-public class Solution {
-	
-
-	public static void main(final String[] args) {
+public class Solution { 
+/**.
+ * { main method }
+ *
+ * @param      args  The arguments
+ */
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
-        StringListInterface l = (StringListInterface)sl;//Typecasting is done for StringListInterface
+        StringListInterface l = (StringListInterface)sl;
         // code to read the test cases input file
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         // check if there is one more line to process
@@ -21,10 +24,10 @@ public class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-	                l.add(tokens[1]);
+                    l.add(tokens[1]);
                 break;
                 case "addAll":
-                if(tokens.length == 2) {
+                if (tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
                 l.addAll(t1);
                 }
@@ -58,5 +61,5 @@ public class Solution {
                 break;
             }
         }
-	}
+    }
 }
