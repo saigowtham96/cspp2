@@ -276,7 +276,7 @@ public class List<E> {
             return null;
         }
         if (n == n2 && n >= size) {
-            System.out.println("Index Out of Bounds Exception");
+            System.out.println("Index Out  of Bounds Exception");
             return null;
         }
        for (int i = n; i < n2; i++) {
@@ -307,3 +307,4 @@ public class List<E> {
         size = 0;
     }
 }
+ 
