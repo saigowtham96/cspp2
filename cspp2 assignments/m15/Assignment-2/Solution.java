@@ -38,7 +38,7 @@ class SortedSet extends Set {
      *
      * @param      start  The start
      * @param      end    The end
-     *
+     * @throws     Exception
      * @return     from start to end returns elements.
      */
     public int[] subSet(final int start, final int end) throws Exception {
@@ -63,7 +63,7 @@ class SortedSet extends Set {
      * headset function.
      *
      * @param      end   The end
-     *
+     * @throws     Exception
      * @return     returms elements.
      */
     public int[] headSet(final int end) throws Exception {
@@ -80,7 +80,7 @@ class SortedSet extends Set {
             }
         }
         return Arrays.copyOf(result, temp);
-    }
+        }
     }
     /**
      * last function.
@@ -201,13 +201,11 @@ public final class Solution {
                 String[] arrstring3 = tokens[1].split(",");
                 int[] object = s.subSet(Integer.parseInt(arrstring3[0]),
                                         Integer.parseInt(arrstring3[1]));
-                
                 if (object != null) {
                     System.out.println(Arrays.toString(object).replace("[",
                         "{").replace("]", "}"));
                 }
 
-                
             } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
@@ -222,7 +220,7 @@ public final class Solution {
                     System.out.println(Arrays.toString(obj).replace("[",
                         "{").replace("]", "}"));
                 }
-            }catch (Exception e) {
+            } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
                 break;
@@ -233,7 +231,7 @@ public final class Solution {
                 }
                 int temp = s.last();
                 System.out.println(temp);
-            }catch (Exception e) {
+            } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
                 break;
