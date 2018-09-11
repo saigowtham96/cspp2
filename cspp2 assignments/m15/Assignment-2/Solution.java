@@ -67,7 +67,7 @@ class SortedSet extends Set {
      * @return     returms elements.
      */
     public int[] headSet(final int end) throws Exception {
-        if (size == 0 && end <= 0) {
+        if (size == 0 || end <= 0) {
             throw new Exception("Set Empty Exception");
         }
         int[] result = new int[size];
