@@ -84,7 +84,7 @@ class SortedSet extends Set {
     }
     /**
      * last function.
-     *@throws    Exception
+     *@throws       Exception
      * @return     returns list of elements.
      */
     public int last() throws Exception {
