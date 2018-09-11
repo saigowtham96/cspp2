@@ -84,7 +84,7 @@ class SortedSet extends Set {
     }
     /**
      * last function.
-     *
+     *@throws    Exception
      * @return     returns list of elements.
      */
     public int last() throws Exception {
@@ -209,7 +209,7 @@ public final class Solution {
             } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
-                break;    
+                break;   
             case "headSet":
             try {
                 if (tokens.length != 2) {
