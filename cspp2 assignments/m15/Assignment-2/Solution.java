@@ -70,6 +70,7 @@ class SortedSet extends Set {
         if (size == 0 || end <= 0) {
             throw new Exception("Set Empty Exception");
         }
+        else {
         int[] result = new int[size];
         int temp = 0;
         for (int i = 0; i < size; i++) {
@@ -79,6 +80,7 @@ class SortedSet extends Set {
             }
         }
         return Arrays.copyOf(result, temp);
+    }
     }
     /**
      * last function.
