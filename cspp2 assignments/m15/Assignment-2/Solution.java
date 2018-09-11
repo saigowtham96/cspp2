@@ -34,12 +34,14 @@ class SortedSet extends Set {
         sort(set);
     }
     /**
-     * subset.
+     * { subSet }
      *
-     * @param      start  The start
-     * @param      end    The end
-     * @throws     Exception
-     * @return     from start to end returns elements.
+     * @param      start      The start
+     * @param      end        The end
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public int[] subSet(final int start, final int end) throws Exception {
         if (start > end) {
@@ -60,11 +62,13 @@ class SortedSet extends Set {
         return Arrays.copyOf(result, k);
     }
     /**
-     * headset function.
+     * { headSet }
      *
-     * @param      end   The end
-     * @throws     Exception
-     * @return     returms elements.
+     * @param      end        The end
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public int[] headSet(final int end) throws Exception {
         if (size == 0 || end <= 0) {
@@ -82,9 +86,11 @@ class SortedSet extends Set {
         }
     }
     /**
-     * last function.
-     * @throws       Exception
-     * @return     returns list of elements.
+     * { last }
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
      */
     public int last() throws Exception {
         if (size == 0) {
