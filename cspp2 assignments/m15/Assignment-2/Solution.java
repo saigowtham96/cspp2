@@ -5,7 +5,7 @@ import java.util.Arrays;
  * Class for sorted set.
  */
 class SortedSet extends Set {
-    /**
+    /**.
      * sort function.
      *
      * @param      array  The array
@@ -33,7 +33,7 @@ class SortedSet extends Set {
         }
         sort(set);
     }
-    /**
+    /**.
      * { subSet }
      *
      * @param      start      The start
@@ -61,7 +61,7 @@ class SortedSet extends Set {
         }
         return Arrays.copyOf(result, k);
     }
-    /**
+    /**.
      * { headSet }
      *
      * @param      end        The end
@@ -85,7 +85,7 @@ class SortedSet extends Set {
         return Arrays.copyOf(result, temp);
         }
     }
-    /**
+    /**.
      * { last }
      *
      * @return     { description_of_the_return_value }
