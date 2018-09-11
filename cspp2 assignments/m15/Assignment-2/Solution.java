@@ -200,6 +200,12 @@ public final class Solution {
                 int[] object = s.subSet(Integer.parseInt(arrstring3[0]),
                                         Integer.parseInt(arrstring3[1]));
                 
+                if (object != null) {
+                    System.out.println(Arrays.toString(object).replace("[",
+                        "{").replace("]", "}"));
+                }
+
+                
             } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
@@ -210,7 +216,10 @@ public final class Solution {
                     break;
                 }
                 int[] obj = s.headSet(Integer.parseInt(tokens[1]));
-                
+                 if (obj != null) {
+                    System.out.println(Arrays.toString(obj).replace("[",
+                        "{").replace("]", "}"));
+                }
             }catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
