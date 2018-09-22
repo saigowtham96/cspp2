@@ -131,25 +131,48 @@ class Task {
         this.urgent = urgent1;
         this.status = status1;
     }
+    /**
+     * Gets the title.
+     *
+     * @return     The title.
+     */
     public String getTitle() {
         return this.title;
     }
+    /**
+     * Gets the assigned to.
+     *
+     * @return     The assigned to.
+     */
     public String getAssignedTo() {
 
         return this.assignedTo;
     }
+    /**
+     * Gets the time to complete.
+     *
+     * @return     The time to complete.
+     */
     public int getTimeToComplete() {
 
         return this.timeToComplete;
     }
+    /**
+     * Gets the important.
+     *
+     * @return     The important.
+     */
     public String getImportant() {
-    
-
         if (important == true) {
             return "Important";
         }
         return "Not Important";
     }
+    /**
+     * Gets the urgent.
+     *
+     * @return     The urgent.
+     */
     public String getUrgent() {
     
 
@@ -158,6 +181,11 @@ class Task {
         }
         return "Not Urgent";
     }
+    /**
+     * Gets the status.
+     *
+     * @return     The status.
+     */
     public String getStatus() {
         return this.status;
     }
@@ -166,7 +194,7 @@ class Task {
         String s = "";
         s += getTitle() + ", " + getAssignedTo() + ", " + getTimeToComplete()
              + ", " + getImportant() + ", " + getUrgent() + ", " + getStatus();
-         //for (int i = 0; i < obj.length; i++) {
+         //for (int i = 0; i < object.length; i++) {
             // s += object[i].getTitle() + ", " + object[i].getAssignedTo() + ", "
                  // + object[i].getTimeToComplete() + ", " + object[i].getImportant() + ", "
                  //+ object[i].getUrgent() + ", " + object[i].getStatus();
