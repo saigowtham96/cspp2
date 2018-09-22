@@ -132,7 +132,7 @@ class Task {
         this.status = status1;
     }
     public String getTitle() {
-        return this. title;
+        return this.title;
     }
     public String getAssignedTo() {
 
@@ -179,8 +179,8 @@ class Task {
  * Class for todoist.
  */
 class Todoist {
-    Task[] object;
-    int size;
+    private Task[] object;
+    private int size;
     Todoist() {
         object = new Task[10];
         size = 0;
