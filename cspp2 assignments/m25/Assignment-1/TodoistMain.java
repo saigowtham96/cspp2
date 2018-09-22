@@ -114,12 +114,12 @@ public class TodoistMain {
  * Class for task.
  */
 class Task {
-    String title;
-    String assignedTo;
-    int timeToComplete;
-    boolean important;
-    boolean urgent;
-    String status;
+    private String title;
+    private String assignedTo;
+    private int timeToComplete;
+    private boolean important;
+    private boolean urgent;
+    private String status;
     Task() {
 
     }
@@ -132,21 +132,18 @@ class Task {
         this.status = status1;
     }
     public String getTitle() {
-        // System.out.println(title);
         return this. title;
     }
     public String getAssignedTo() {
-        // System.out.println(assignedTo);
 
         return this.assignedTo;
     }
     public int getTimeToComplete() {
-        // System.out.println(timeToComplete);
 
         return this.timeToComplete;
     }
     public String getImportant() {
-        // System.out.println(urgent);
+    
 
         if (important == true) {
             return "Important";
@@ -154,7 +151,7 @@ class Task {
         return "Not Important";
     }
     public String getUrgent() {
-        // System.out.println(important);
+    
 
         if (urgent == true) {
             return "Urgent";
@@ -162,7 +159,7 @@ class Task {
         return "Not Urgent";
     }
     public String getStatus() {
-        // System.out.println(status);
+    
         return this.status;
     }
     @Override
