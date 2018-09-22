@@ -110,6 +110,9 @@ public class TodoistMain {
         startTest();
     }
 }
+/**
+ * Class for task.
+ */
 class Task {
     String title;
     String assignedTo;
@@ -167,15 +170,18 @@ class Task {
         String s = "";
         s += getTitle() + ", " + getAssignedTo() + ", " + getTimeToComplete()
              + ", " + getImportant() + ", " + getUrgent() + ", " + getStatus();
-        // for (int i = 0; i < obj.length; i++) {
-        //     s += obj[i].getTitle() + ", " + obj[i].getAssignedTo() + ", "
-        //          + obj[i].getTimeToComplete() + ", " + obj[i].getImportant() + ", "
-        //          + obj[i].getUrgent() + ", " + obj[i].getStatus();
+         //for (int i = 0; i < obj.length; i++) {
+            // s += object[i].getTitle() + ", " + object[i].getAssignedTo() + ", "
+                 // + object[i].getTimeToComplete() + ", " + object[i].getImportant() + ", "
+                 //+ object[i].getUrgent() + ", " + object[i].getStatus();
         // }
         return s;
     }
 
 }
+/**
+ * Class for todoist.
+ */
 class Todoist {
     Task[] object;
     int size;
