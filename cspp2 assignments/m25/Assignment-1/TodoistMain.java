@@ -210,7 +210,7 @@ class Todoist {
                    +", "+ object[i].getImportant() + ", " + object[i].getUrgent() + ", " + object[i].getStatus() + "\n";
         }
         str += object[i].getTitle() + ", " + object[i].getAssignedTo() + ", " + object[i].getTimeToComplete()
-               + ", "+object[i].getImportant() + ", " + object[i].getUrgent() + ", " + object[i].getStatus();
+               + ", "+ object[i].getImportant() + ", " + object[i].getUrgent() + ", " + object[i].getStatus();
         return str;
     }
 
