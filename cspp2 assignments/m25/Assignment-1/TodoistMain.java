@@ -195,8 +195,8 @@ class Task {
         s += getTitle() + ", " + getAssignedTo() + ", " + getTimeToComplete()
              + ", " + getImportant() + ", " + getUrgent() + ", " + getStatus();
          //for (int i = 0; i < object.length; i++) {
-            // s += object[i].getTitle() + ", " + object[i].getAssignedTo() + ", "
-                 // + object[i].getTimeToComplete() + ", " + object[i].getImportant() + ", "
+             //s += object[i].getTitle() + ", " + object[i].getAssignedTo() + ", "
+                  //+ object[i].getTimeToComplete() + ", " + object[i].getImportant() + ", "
                  //+ object[i].getUrgent() + ", " + object[i].getStatus();
         // }
         return s;
