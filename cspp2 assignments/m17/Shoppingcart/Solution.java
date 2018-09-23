@@ -1,73 +1,61 @@
+import java.io.BufferedInputStream;
 import java.util.Scanner;
-/**.
- * { item_description }
+/**
+ * class named "solution".
  */
-final class Solution {
-    /**.
-     * Constructs the object.
+public class Solution {
+    /**
+     * constructor for solution class.
      */
-    private Solution() {
+    protected Solution() {
 
     }
-    /**.
-     * { function_description }
-     *
+    /**
+     * main method.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        int k = 1;
-        ShoppingCart c = new ShoppingCart();
-        Scanner scan = new Scanner(System.in);
-        int lines = scan.nextInt();
-        for (int i = 0; i <= lines; i++) {
-            String[] tokens = scan.nextLine().split(" ");
+        ShoppingCart shoppingObject = new ShoppingCart();
+        Scanner sc = new Scanner(new BufferedInputStream(System.in));
+        while (sc.hasNext()) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(" ");
             switch (tokens[0]) {
-            case "Item":
+                case "Item":
                 String[] items = tokens[1].split(",");
-                c.addToCatalog(new Item(items[0],
-                                        Integer.parseInt(
-                                            items[1]),
-                                        Double.parseDouble(
-                                            items[2])));
+    Item itemObject = new Item(items[0], items[1], items[2]);
+                shoppingObject.addToCatalog(itemObject);
                 break;
-            case "catalog":
-                c.showCatalog();
+                case "add":
+                String[] products = tokens[1].split(",");
+                itemObject = new Item(products[0], products[1]);
+                shoppingObject.addToCart(itemObject);
                 break;
-            case "add":
+                case "remove":
                 items = tokens[1].split(",");
-                c.addToCart(new Item(items[0],
-                                     Integer.parseInt(
-                                         items[1])));
+                itemObject = new Item(items[0], items[1]);
+                shoppingObject.removeFromCart(itemObject);
                 break;
-            case "show":
-                c.showCart();
+                case "catalog":
+                shoppingObject.showCatalog();
                 break;
-            case "totalAmount":
-                System.out.println(
-                    "totalAmount: " + c.getTotalAmount());
+                case "show":
+                shoppingObject.showCart();
                 break;
-            case "remove":
-                items = tokens[1].split(",");
-                c.removeFromCart(new Item(items[0],
-                                          Integer.parseInt(
-                                              items[1])));
+                case "totalAmount":
+System.out.println("totalAmount: " + shoppingObject.getTotalAmount());
                 break;
-            case "payableAmount":
-                System.out.println(
-                    "Payable amount: " + c.getPayableAmount());
+                case "payableAmount":
+System.out.println("Payable amount: " + shoppingObject.getPayableAmount());
                 break;
-            case "print":
-                c.printInvoice();
+                case "print":
+System.out.println("Name" + "   " + "quantity" + "   " + "Price");
+                shoppingObject.printInvoice();
                 break;
-            case "coupon":
-                while (k == 1) {
-                    c.applyCoupon(tokens[1]);
-                    k++;
-                    break;
-                }
+                case "coupon":
+                shoppingObject.applyCoupon(tokens[1]);
                 break;
-            default:
-                break;
+                default:
             }
         }
     }
