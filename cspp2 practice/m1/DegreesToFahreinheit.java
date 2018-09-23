@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Class for degrees to fahreinheit.
+ */
 public class DegreesToFahreinheit
 {
 	public static void main(String[] args)

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 /*Do not modify this main function.*/
 /**.
  * Class for solution.

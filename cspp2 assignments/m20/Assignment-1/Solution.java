@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 /**
  * Class for question.
  */
@@ -401,7 +401,3 @@ public final class Solution {
 
     }
 }
-
-
-
-

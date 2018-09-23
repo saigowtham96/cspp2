@@ -56,10 +56,10 @@ class List {
         if (index >= size || index < 0) {
             throw new Exception("Invalid Position Exception");
         } else {
-            int i;
-            for (i = index; i < size - 1; i++) {
+             for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
-            } list[i] = list[size - 1];
+            } 
+            list[i] = list[size - 1];
             size--;
         }
     }

@@ -6,6 +6,6 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
         String Name = s.nextLine();
         long Rollno = s.nextLong();
-		System.out.println("Name : "+Name + "Roll Number :"+Rollno);
+		System.out.println("Name : "+Name + "Roll Number :"+Rollno\n);
 	}
 }

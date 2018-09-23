@@ -1,0 +1,23 @@
+FitByte Dashboard
+FitByte company sells activity trackers devices for monitoring and tracking fitness-related metrics such as distance walked or run, calorie consumption, and in some cases heartbeat and quality of sleep. They want you to use your object oriented programming skills to develop software to collect data which is not automatically captured by the activity tracker device. For example: Fitness goals, Food log and Water log. Food log collects information about what did the user eat, how much and when. Water log has the amount of water consumed in ml. Activity trackers don’t automatically log such data.
+
+The main program should be able to:
+
+Add to the food log. The data in the food log includes the name of the food item consumed, quantity and the time at which food is consumed.
+Similarly, drinking water consumption can be logged by adding to the water log.
+Physical activities can also be logged with the activity name, date, start time, end time and notes if any.
+Weight can be logged with the weight in KG, fat % and date
+Sleep can be logged with the date start time and date end time.
+Finally, a summary of all the data should be shown for a given log (food, water, activity, sleep and weight) and for a given day.
+
+For the problem given above complete the following steps. Seek mentors help as and when you need it.
+
+Create test cases that can be used to verify if the program is working right.
+Identify classes
+Identify the Properties (use appropriate data types) and behaviours
+Create classes in java with constructors, setters and getters
+Use scanner to read the data, parse input and create objects and array of objects if needed.
+Design methods: static and non-static as necessary
+Implement the methods
+Create client class with main method and test the methods
+
