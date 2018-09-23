@@ -1,7 +1,7 @@
-      		File1.txt	File2.txt	File3.txt	File4.txt	File5.txt	
-File1.txt	100		66		69		72		71		
-File2.txt	66		100		77		74		76		
-File3.txt	69		77		100		75		81		
-File4.txt	72		74		75		100		74		
-File5.txt	71		76		81		74		100		
-Maximum similarity is between File3.txt and File5.txt
+             file1.txt    file2.txt    file3.txt    file4.txt    file5.txt 
+file1.txt        100.0         34.0         38.0         41.0          0.0 
+file2.txt         34.0        100.0         10.0         66.0          0.0 
+file3.txt         38.0         10.0        100.0         16.0          0.0 
+file4.txt         41.0         66.0         16.0        100.0          0.0 
+file5.txt          0.0          0.0          0.0          0.0        100.0 
+Maximum similarity is between file2.txt and file4.txt
